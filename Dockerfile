@@ -1,5 +1,5 @@
 #Build the Maven project
-FROM maven:3.5.2-alpine as builder
+FROM maven:3.6.1-alpine as builder
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN apk update && apk upgrade && \
