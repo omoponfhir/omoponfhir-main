@@ -2,14 +2,7 @@
 FROM maven:3.6.1-alpine as builder
 COPY . /usr/src/app
 WORKDIR /usr/src/app
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
-
-RUN git clone https://github.com/omoponfhir/omoponfhir-omopv5-jpabase.git
-RUN git clone https://github.com/omoponfhir/omoponfhir-omopv5-stu3-mapping.git
-RUN git clone https://github.com/omoponfhir/omoponfhir-stu3-server.git
-
-RUN mvn -f pom-docker.xml clean install
+RUN mvn clean install
 
 #Build the Tomcat container
 FROM tomcat:alpine

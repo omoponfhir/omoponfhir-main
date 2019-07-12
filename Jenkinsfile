@@ -18,7 +18,7 @@ pipeline{
             //line between the ''' characters will be treated as separate lines of a shell script.
             
             steps{
-                sh '''mvn -f pom-docker-test.xml test'''
+                sh '''mvn test'''
             }
         }
 
