@@ -16,9 +16,10 @@ pipeline{
             //Since this is a groovy file we use the '''string''' syntax to define multi-line formatting.
             //Groovy will use the string EXACTLY as written in between the ''' characters. In this instance each
             //line between the ''' characters will be treated as separate lines of a shell script.
-            steps{
-                sh '''mvn -f pom-docker.xml test'''
-            }
+            
+            //steps{
+            //    sh '''mvn -f pom-docker.xml test'''
+            //}
         }
 
         //Define the deploy stage
