@@ -2,9 +2,8 @@
 FROM maven:3.5.2-alpine as builder
 COPY . /usr/src/app
 WORKDIR /usr/src/app
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y git
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash git openssh
 
 RUN git clone https://github.com/omoponfhir/omoponfhir-omopv5-jpabase.git
 RUN git clone https://github.com/omoponfhir/omoponfhir-omopv5-stu3-mapping.git
