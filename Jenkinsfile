@@ -17,7 +17,7 @@ pipeline{
             //Groovy will use the string EXACTLY as written in between the ''' characters. In this instance each
             //line between the ''' characters will be treated as separate lines of a shell script.
             steps{
-                sh '''mvn test'''
+                sh '''mvn -f pom-docker.xml test'''
             }
         }
 
