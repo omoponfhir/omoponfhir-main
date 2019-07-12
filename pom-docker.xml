@@ -19,9 +19,9 @@
 	<description>OMOPonFHIR STU3 Server Build</description>
 
 	<modules>
-		<module>../omoponfhir-omopv5-jpabase</module>
-		<module>../omoponfhir-omopv5-stu3-mapping</module>
-		<module>../omoponfhir-stu3-server</module>
+		<module>omoponfhir-omopv5-jpabase</module>
+		<module>omoponfhir-omopv5-stu3-mapping</module>
+		<module>omoponfhir-stu3-server</module>
 	</modules>
 
 	<prerequisites>
