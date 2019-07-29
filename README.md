@@ -6,17 +6,7 @@ OmopOnFHIR Implementation version 2
 
 Database Dependencies
 -
-This application requires an OMOP V5 database to work. You can use the database here: https://github.com/gt-health/smart-platform-docker/tree/hdap-devops/smart-postgresql
-1. First clone the `hdap-devops` branch of the `smart-platform-docker project`
-2. Navigate to the `smart-postgres` directory of the project.
-   ```
-     cd smart-postgres
-   ```
-3. Look at the docker-compose.yml file and adjust configurations as needed. By default the database is configured to run on port 5438. Use docker-compose to start the container.
-   ```
-   sudo docker-compose up --build -d
-   ```
-4. The OMOP V5 database is not running in a container.
+This application requires an OMOP V5 database to work. You can use the database here: https://github.com/omoponfhir/omopv5fhir-pgsql/ Please follow the instruction in README. This database contains couple of sample synthetic patients.
 
 How to install and run.
 -
