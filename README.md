@@ -6,7 +6,9 @@ OmopOnFHIR Implementation version 2
 
 Database Dependencies
 -
-This application requires an OMOP V5 database to work. You can use the database here: https://github.com/omoponfhir/omopv5fhir-pgsql/ Please follow the instruction in README. This database contains couple of sample synthetic patients.
+This application requires an OMOP V5 database to work. You can use the database here: https://github.com/omoponfhir/omopv5fhir-pgsql/ 
+
+Please follow the instruction in README. This database contains couple of sample synthetic patients.
 
 How to install and run.
 -
