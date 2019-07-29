@@ -1,0 +1,9 @@
+version: '3'
+services:
+  omoponfhir:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
