@@ -12,13 +12,22 @@ Please follow the instruction in README. This database contains couple of sample
 
 How to install and run.
 -
-Docker Compose is used to create a container to run the OMOPonFHIR application. Before running the application
-update the values of the JDBC_URL, JDBC_USERNAME, and JDBC_PASSWORD environment variables in the Dockerfile
-They must contain the data necessary for your application to connect to an OMOP V5 database.
-After updating the ENV variables in the Dockerfile start the application
+To download,
+git clone --recurse https://github.com/omoponfhir/omoponfhir-main.git
+
+Before running the application update the values of the JDBC_URL, JDBC_USERNAME, and JDBC_PASSWORD environment variables in the Dockerfile. They must contain the data necessary for your application to connect to an OMOP V5 database. After updating the ENV variables in the Dockerfile, you can do either
+
+1. use docker compose to build and run
 ```
 sudo docker-compose up --build -d
 ```
+
+2. or use docker build and run
+```
+sudo docker build -t omoponfhir .
+sudo docker run --name omoponfhir -p 8080:8080 -d omoponfhir:latest
+```
+
 NOTE: The OMOPonFHIR server is set to READ-ONLY. If you want to write to OMOPonFHIR, web.xml in WEB-INFO must have readOnly set to False.
 
 Application URLs
