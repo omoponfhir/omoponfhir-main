@@ -20,19 +20,19 @@ This application requires an OMOP V5 database to work. You can use the database 
 
 How to install and run.
 -
-Docker Compose is used to create a container to run the GT-FHIR2 application. Before running the application
+Docker Compose is used to create a container to run the OMOPonFHIR application. Before running the application
 update the values of the JDBC_URL, JDBC_USERNAME, and JDBC_PASSWORD environment variables in the Dockerfile
 They must contain the data necessary for your application to connect to an OMOP V5 database.
 After updating the ENV variables in the Dockerfile start the application
 ```
 sudo docker-compose up --build -d
 ```
-NOTE: The GT-FHIR2 is set to READ-ONLY. If you want to write to GT-FHIR2, web.xml in WEB-INFO must have readOnly set to False.
+NOTE: The OMOPonFHIR server is set to READ-ONLY. If you want to write to OMOPonFHIR, web.xml in WEB-INFO must have readOnly set to False.
 
 Application URLs
 -
-- UI - http://<my_host>:8080/gt-fhir/tester/
-- API -  	http://<my_host>:8080/gt-fhir/fhir
+- UI - http://<my_host>:8080/omoponfhir-stu3/tester/
+- API -  	http://<my_host>:8080/omoponfhir-stu3/fhir
 
 Additional Information
 -
