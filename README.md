@@ -1,4 +1,4 @@
-OmopOnFHIR Implementation version 2
+OmopOnFHIR Implementation version 1
 =
 - Supports OMOP v5
 - Supports STU3
