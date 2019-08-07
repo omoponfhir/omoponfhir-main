@@ -7,7 +7,7 @@
 	<groupId>edu.gatech.chai</groupId>
 	<artifactId>omoponfhir</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.1</version>
+	<version>1.1.0</version>
 	<name>OMOPonFHIR</name>
 	<url>http://omoponfhir.org</url>
 
@@ -46,34 +46,4 @@
 		</license>
 	</licenses>
 
-	<properties>
-		<hapi_stable_version>3.8.0</hapi_stable_version>
-		<hapi_current_version>3.8.0-SNAPSHOT</hapi_current_version>
-		<omoponfhir_module_version>1.0.1</omoponfhir_module_version>
-		<!-- configure timestamp in MANIFEST.MF for maven-war-provider -->
-		<maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>3.0.0-M2</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 </project>
