@@ -118,4 +118,4 @@ The following table shows basic mappings between FHIR DSTU2 resources and OMOP C
 While v1 makes a direct mapping as shown on the table above, the v2 will use intermediate (or staging) tables/databases for FHIR to OMOP CDM mappings. This new approach serves two critical operational needs.
 
  1. Data Validation and Coding Transformations: For more in-depth data validations, the FHIR resources will be intially mapped to the intermediate data schema, which is designed to adapt FHIR and OMOP CDM. When a ETL procedure is executed, the data will be validated and transformed to appropriate concept data in OMOP CDM. This allows the data stored in OMOP CDM to be better ready for such as analytic applications.
- 2. Pre-processing Clinical Data: When the OMOP tables are populated from the intermediate table, the other supplmental tables such as *_era tables are also populated.
+ 2. Pre-processing Clinical Data: When the OMOP tables are populated from the intermediate table, the other supplemental tables such as *_era tables are also populated.
