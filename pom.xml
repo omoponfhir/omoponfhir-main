@@ -7,7 +7,7 @@
 	<groupId>edu.gatech.chai</groupId>
 	<artifactId>omoponfhir</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<name>OMOPonFHIR</name>
 	<url>http://omoponfhir.org</url>
 
