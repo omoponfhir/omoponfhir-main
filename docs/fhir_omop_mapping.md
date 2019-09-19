@@ -6,4 +6,4 @@
 There is working document for the mapping in ODHSI FHIR working group. Please visit the following site for various mapping spreadsheet.
 
 
-https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:mappings_between_ohdsi_cdm_and_fhir
+OHDSI OMOP on FHIR Documents: https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:mappings_between_ohdsi_cdm_and_fhir
