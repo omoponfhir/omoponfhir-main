@@ -4,6 +4,8 @@ GT-FHIR server is a Georgia Tech Fast Healthcare Interoperability Resources (FHI
 
 The key component of GT-FHIR is a data access layer that has been modified to support any database schema. The component allows OMOP CDM to be deployed as a backend database. FHIR resources from/to OMOP CDM mapping is done at the gt-fhir-entities. However, as FHIR and OMOP CDM cannot be mapped one-to-one, some of data elements are set statically. Some mappings require multiple FHIR entity-jpa classes to support bidirectional mappings. 
 
+OMOP to FHIR or FHIR to OMOP Mapping information can be found at [OHDSI FHIR Workgroup wiki page](https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:mappings_between_ohdsi_cdm_and_fhir).
+
 We are constantly working on mapping new concepts and adding to new features. *Pull requests are welcome!* For more details on source codes, visit [GT-FHIR Project Github](https://github.com/gt-health/GT-FHIR2).
 
 ## Current GT-FHIR Version
