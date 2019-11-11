@@ -6,14 +6,14 @@ The key component of GT-FHIR is a data access layer that has been modified to su
 
 OMOP to FHIR or FHIR to OMOP Mapping information can be found at [OHDSI FHIR Workgroup wiki page](https://www.ohdsi.org/web/wiki/doku.php?id=projects:workgroups:mappings_between_ohdsi_cdm_and_fhir).
 
-We are constantly working on mapping new concepts and adding to new features. *Pull requests are welcome!* For more details on source codes, visit [GT-FHIR Project Github](https://github.com/gt-health/GT-FHIR2).
+We are constantly working on mapping new concepts and adding to new features. *Pull requests are welcome!* For more details on source codes, visit [OMOPonFHIR Project Github](https://github.com/omoponfhir/omoponfhir-main/).
 
 ## Current GT-FHIR Version
 **Snapshot of OMOPonFHIR**: There is a public OMOPonFHIR site that shows the latest snapshot. This runs with HAPI-FHIR's UI Test site running over Synpuff data source in OMOP v5. [OMOPonFHIR Snapshot Server](https://apps.hdap.gatech.edu/gt-fhir/tester/) 
 
-**SMART on FHIR**: OMOPonFHIR is also equipped to support SMART on FHIR. GT-FHIR talks to Authorization server in [SMART-on-FHIR Reference Implementation](https://github.com/smart-on-fhir/installer) for launch ID resolution. You will need to install this reference implementation of SMART on FHIR and use the Authorization server part with GT-FHIR. The SMART on FHIR support has not yet been transferred to GT-FHIR2 from GT-FHIR. This will be done shortly.
+**SMART on FHIR**: OMOPonFHIR is also equipped to support SMART on FHIR. OMOPonFHIR server has built-in services to support SMART on FHIR Authorization flow. This allows to simulate EHR-launching or stand-alone launching. More details will be provided soon.
 
-[Deployment scripts] GT-FHIR2 includes docker composer, which helps deploying the server in the docker container.
+[Deployment scripts] OMOPonFHIR includes docker composer, which helps deploying the server in the docker container.
 
 ## People
 **FHIR and Lead** 
