@@ -49,8 +49,8 @@ Environment variables are required to be set in order for OMOPonFHIR server to r
 
 Application URLs
 -
-- UI - http://<my_host>:8080/omoponfhir-stu3/tester/
-- API -  	http://<my_host>:8080/omoponfhir-stu3/fhir
+- TestPage UI - http://<my_host>:8080/omoponfhir-stu3/
+- API - http://<my_host>:8080/omoponfhir-stu3/fhir
 - SMART on FHIR - http://<my_host>:8080/omoponfhir-stu3/smart/
 
 Additional Information
