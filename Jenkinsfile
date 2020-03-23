@@ -34,7 +34,9 @@ pipeline{
                     docker.withRegistry('https://gt-build.hdap.gatech.edu'){
                         //Build and push the database image
                         def omoponfhirImage = docker.build("omoponfhir3:${env.BUILD_NUMBER}", "-f Dockerfile .")
+                        def gtfhirImage = docker.build("gt-fhir:${env.BUILD_NUMBER}", "-f Dockerfile-gt-fhir .")
                         omoponfhirImage.push("${env.BUILD_NUMBER}")
+                        gtfhirImage.push("${env.BUILD_NUMBER}")
                     }
                 }
             }
@@ -45,7 +47,7 @@ pipeline{
             steps{
                 script{
                     rancher confirm: true, credentialId: 'gt-rancher-server', endpoint: 'https://gt-rancher.hdap.gatech.edu/v2-beta', environmentId: '1a7', environments: '', image: "gt-build.hdap.gatech.edu/omoponfhir3:${env.BUILD_NUMBER}", ports: '', service: 'OMOPonFHIR/omoponfhir3', timeout: 50
-                    rancher confirm: true, credentialId: 'gt-rancher-server', endpoint: 'https://gt-rancher.hdap.gatech.edu/v2-beta', environmentId: '1a7', environments: '', image: "gt-build.hdap.gatech.edu/omoponfhir3:${env.BUILD_NUMBER}", ports: '', service: 'GT-FHIR-2/gtfhir2', timeout: 50
+                    rancher confirm: true, credentialId: 'gt-rancher-server', endpoint: 'https://gt-rancher.hdap.gatech.edu/v2-beta', environmentId: '1a7', environments: '', image: "gt-build.hdap.gatech.edu/gt-fhir:${env.BUILD_NUMBER}", ports: '', service: 'GT-FHIR-2/gtfhir2', timeout: 50
                     rancher confirm: true, credentialId: 'gt-rancher-server', endpoint: 'https://gt-rancher.hdap.gatech.edu/v2-beta', environmentId: '1a7', environments: '', image: "gt-build.hdap.gatech.edu/omoponfhir3:${env.BUILD_NUMBER}", ports: '', service: 'GT-FHIR-2/synpuffhirserver', timeout: 50
                     rancher confirm: true, credentialId: 'gt-rancher-server', endpoint: 'https://gt-rancher.hdap.gatech.edu/v2-beta', environmentId: '1a7', environments: '', image: "gt-build.hdap.gatech.edu/omoponfhir3:${env.BUILD_NUMBER}", ports: '', service: 'GT-FHIR-2/smartfhir', timeout: 50
                 }
