@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 RUN mvn clean install
 
 #Build the Tomcat container
-FROM tomcat:alpine
+FROM tomcat:9-alpine
 #set environment variables below and uncomment the line. Or, you can manually set your environment on your server.
 #ENV JDBC_URL=jdbc:postgresql://<host>:<port>/<database> JDBC_USERNAME=<username> JDBC_PASSWORD=<password>
 RUN apk update
