@@ -2,7 +2,7 @@ OMOPonFHIR Implementation version 1
 =
 - Supports OMOP v5
 - Supports STU3
-- [WIP] Supports DSTU2 -- currently work in progress. omoponfhir-dstu2-server/ is just copy of omoponfhir-stu3-server. When it's completed, pom and dockerfile will include this directory.
+- DSTU2: DSTU2 is available from https://github.com/omoponfhir/omoponfhir-main-dstu2/ 
 
 Database Dependencies
 -
