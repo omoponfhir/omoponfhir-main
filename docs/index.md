@@ -20,6 +20,9 @@ We are constantly working on mapping new concepts and adding to new features. *P
  * [Myung Choi](https://github.com/myungchoi)
 
 **OMOP CDM**
+ * [Saul Crumpton](https://github.com/BSCrumpton)
+ 
+**OMOP CDM**
  * [Richard Starr](https://github.com/orgs/gt-health/people/rstarr7)
 
 **DevOp and Deployment Support**
