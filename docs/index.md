@@ -9,7 +9,7 @@ OMOP to FHIR or FHIR to OMOP Mapping information can be found at [OHDSI FHIR Wor
 We are constantly working on mapping new concepts and adding to new features. *Pull requests are welcome!* For more details on source codes, visit [OMOPonFHIR Project Github](https://github.com/omoponfhir/omoponfhir-main/).
 
 ## Current OMOPonFHIR Version
-**Snapshot of OMOPonFHIR**: There is a public OMOPonFHIR site that shows the latest snapshot. This runs with HAPI-FHIR's UI Testpage running over Synpuff data source in OMOP v5. [OMOPonFHIR Snapshot Server](https://apps.hdap.gatech.edu/gt-fhir/) 
+**Snapshot of OMOPonFHIR**: There is a public OMOPonFHIR site that shows the latest snapshot. This runs with HAPI-FHIR's UI Testpage running over Synpuff data source in OMOP v5. [OMOPonFHIR Snapshot Server](https://apps.hdap.gatech.edu/gt-fhir-smart/) 
 
 **SMART on FHIR**: OMOPonFHIR is also equipped to support SMART on FHIR. OMOPonFHIR server has built-in services to support SMART on FHIR Authorization flow. This allows to simulate EHR-launching or stand-alone launching. The github page has a link to the smart on fhir launcher.
 
