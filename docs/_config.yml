@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: GT-FHIR2, the OMOP on FHIR Project
 description: Georgia Tech FHIR Server with an OMOP CDM mapping to FHIR Resources.
-show_downloads: true
+show_downloads: false
