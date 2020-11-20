@@ -10,3 +10,6 @@
 	path = omoponfhir-stu3-server
 	url = https://github.com/omoponfhir/omoponfhir-stu3-server.git
 	branch = master
+[submodule "omopv5fhir-pgsql"]
+	path = omopv5fhir-pgsql
+	url = git@github.com:omoponfhir/omopv5fhir-pgsql.git
