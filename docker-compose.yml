@@ -11,7 +11,7 @@ services:
       - JDBC_PASSWORD=i3lworks
       - JDBC_USERNAME=omop_v5
       - JDBC_URL=jdbc:postgresql://localhost:5432/postgres?currentSchema=omop_v5
-      - AUTH_BASIC="client:secret"
+      - AUTH_BASIC=client:secret
   database:
     build:
       context: ./omopv5fhir-pgsql/
