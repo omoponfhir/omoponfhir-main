@@ -1,0 +1,4 @@
+[submodule "omoponfhir-r4-server"]
+	path = omoponfhir-r4-server
+	url = https://github.com/omoponfhir/omoponfhir-r4-server.git
+	branch = master

@@ -1,12 +1,12 @@
 OMOPonFHIR Implementation version 1
 =
-- Supports OMOP v5
-- Supports STU3
+- Supports OMOP v6
+- Supports R4
 - DSTU2: DSTU2 is available from https://github.com/omoponfhir/omoponfhir-main-dstu2/ 
+- STU3: STU3 is available from https://github.com/omoponfhir/omoponfhir-main-stu3/ 
 
 Database Dependencies
 -
-This application requires an OMOP V5 database to work. You can use the database here: https://github.com/omoponfhir/omopv5fhir-pgsql/ 
 
 Please follow the instruction in README. This database contains couple of sample synthetic patients.
 
@@ -49,9 +49,9 @@ Environment variables are required to be set in order for OMOPonFHIR server to r
 
 Application URLs
 -
-- TestPage UI - http://<my_host>:8080/omoponfhir3/
-- API - http://<my_host>:8080/omoponfhir3/fhir
-- SMART on FHIR - http://<my_host>:8080/omoponfhir3/smart/
+- TestPage UI - http://<my_host>:8080/omoponfhir4/
+- API - http://<my_host>:8080/omoponfhir4/fhir
+- SMART on FHIR - http://<my_host>:8080/omoponfhir4/smart/
 
 Additional Information
 -
