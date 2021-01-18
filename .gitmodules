@@ -1,0 +1,12 @@
+[submodule "omoponfhir-r4-server"]
+	path = omoponfhir-r4-server
+	url = https://github.com/omoponfhir/omoponfhir-r4-server.git
+	branch = master
+[submodule "omoponfhir-omopv6-r4-mapping"]
+	path = omoponfhir-omopv6-r4-mapping
+	url = https://github.com/omoponfhir/omoponfhir-omopv6-r4-mapping.git
+	branch = main
+[submodule "omoponfhir-omopv6-jpabase"]
+	path = omoponfhir-omopv6-jpabase
+	url = https://github.com/omoponfhir/omoponfhir-omopv6-jpabase.git
+	branch = main
