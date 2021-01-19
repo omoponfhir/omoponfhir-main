@@ -31,7 +31,7 @@
 		</repository>
 	</repositories>
 
-	<description>OMOPonFHIR STU3 Server Build</description>
+	<description>OMOPonFHIR R4 Server Build</description>
 
 	<modules>
 		<module>omoponfhir-omopv6-jpabase</module>
