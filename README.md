@@ -1,3 +1,5 @@
+NOTE: Our main repo has been changed to omoponfhir-main-r4-sql repository. We will moving our implementation to SqlRender and stop working on JPA. OMOPonFHIR.org site is now pointing to this new repo.
+
 OMOPonFHIR Implementation version 1
 =
 - Supports OMOP v6
